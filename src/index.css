@@ -1,0 +1,278 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h2 {
+    @apply text-lg text-gray-700 md:text-3xl lg:text-5xl font-semibold;
+  }
+  /* h3 {
+    @apply text-2xl;
+  } */
+  /* h4 {
+    @apply text-2xl;
+  }
+  h5 {
+    @apply text-2xl;
+  } */
+}
+/*
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}*/
+
+:root {
+  /* background-color: hsl(214.29, 86.15%, 80%, 0.1); */
+  /* background-color: hsl(214.29, 86.15%, 80%, 0.1); */
+  /* background-color: hsla(184.62, 28.26%, 63.92%, 0.1); */
+  user-select: none;
+
+  --background: hsl(215, 86%, 95%);
+  /* --background: hsl(249, 16%, 9%); */
+
+  --foreground: white;
+
+  --primary: hsl(214, 86%, 72%);
+  --primary-foreground: white;
+
+  --button: hsl(214, 86%, 72%);
+  --button-foreground: white;
+
+  --secondary: hsl(214, 86%, 50%);
+  --secondary-foreground: white;
+
+  --accent: hsl(215, 86%, 83%);
+  --accent-foreground: white;
+}
+
+/* Default Theme - blue */
+/* #86B6F6 */
+[data-theme="light"] {
+  --background: hsl(215, 86%, 95%);
+  --foreground: white;
+
+  --primary: hsl(214, 86%, 72%);
+  --primary-foreground: white;
+
+  --button: hsl(214, 86%, 72%);
+  --button-foreground: white;
+
+  --secondary: hsl(214, 86%, 50%);
+  --secondary-foreground: white;
+
+  --accent: hsl(215, 86%, 83%);
+  --accent-foreground: white;
+}
+
+/* blur dark */
+[data-theme="light"] {
+  --background: hsl(215, 86%, 95%);
+  --foreground: white;
+
+  --primary: hsl(214, 97%, 25%);
+  /* main */
+  /* hsl(201, 99%, 33%) */
+  --primary-foreground: white;
+
+  --button: hsl(214, 86%, 72%);
+  --button-foreground: white;
+
+  --secondary: hsl(214, 86%, 50%);
+  --secondary-foreground: white;
+
+  --accent: hsl(195, 97%, 40%);
+  /* hsl(190, 96%, 45%) */
+  /* hsl(183, 78%, 63%) */
+  --accent-foreground: white;
+}
+
+/*  green */
+/* [data-theme="green"] {
+  --background: hsl(214.29, 86.15%, 80%, 0.1);
+  --foreground: white;
+
+  --primary: hsl(184.62, 28.26%, 63.92%);
+  --primary-foreground: white;
+
+  --button: hsl(184.62, 28.26%, 63.92%);
+  --button-foreground: white;
+
+  --secondary: #89b9bd;
+  --secondary-foreground: white;
+
+  --accent: hsl(184.62, 28.26%, 90%);
+  --accent-foreground: white;
+} */
+
+/* green dark */
+[data-theme="green"] {
+  --background: hsl(214.29, 86.15%, 80%, 0.1);
+  --foreground: white;
+
+  --primary: hsl(136, 54%, 26%);
+  /* hsl(102, 57%, 38%) */
+  --primary-foreground: white;
+
+  --button: hsl(184.62, 28.26%, 63.92%);
+  --button-foreground: white;
+
+  --secondary: #89b9bd;
+  --secondary-foreground: white;
+
+  --accent: hsl(102, 57%, 38%);
+  /* main */
+  /* hsl(121, 42%, 54%) */
+
+  /* hsl(95, 58%, 70%) */
+
+  --accent-foreground: white;
+}
+
+/* pink */
+/* #F875AA */
+[data-theme="pink"] {
+  --background: hsl(337, 93%, 95%);
+  --foreground: white;
+
+  --primary: hsl(336, 90%, 72%);
+  --primary-foreground: white;
+
+  --button: hsl(103, 41%, 72%);
+  --button-foreground: white;
+
+  --secondary: hsl(336, 91%, 50%);
+  --secondary-foreground: white;
+
+  --accent: hsl(336, 91%, 83%);
+  --accent-foreground: white;
+}
+
+/* seafoam */
+/* #7ED7C1  */
+[data-theme="seafoam"] {
+  --background: hsl(168, 52%, 94%);
+  --foreground: white;
+
+  --primary: hsl(165, 52%, 72%);
+  --primary-foreground: white;
+
+  --button: hsl(103, 41%, 72%);
+  --button-foreground: white;
+
+  --secondary: hsl(165, 53%, 50%);
+  --secondary-foreground: white;
+
+  --accent: hsl(165, 53%, 83%);
+  --accent-foreground: white;
+}
+
+/* lavender */
+/* #BEADFA */
+[data-theme="lavender"] {
+  --background: hsl(254, 86%, 94%);
+  --foreground: white;
+
+  --primary: hsl(253, 89%, 72%);
+  --primary-foreground: white;
+
+  --button: hsl(103, 41%, 72%);
+  --button-foreground: white;
+
+  --secondary: hsl(336, 91%, 50%);
+  --secondary-foreground: white;
+
+  --accent: hsl(253, 88%, 83%);
+  --accent-foreground: white;
+}
+
+/* red */
+/* BE3144   */
+/* [data-theme="red"] {
+  --background: hsl(349, 59%, 94%);
+  --foreground: white;
+
+  --primary: hsl(351, 59%, 72%);
+
+  --primary-foreground: white;
+
+  --button: hsl(351, 59%, 72%);
+  --button-foreground: white;
+
+  --secondary: hsl(352, 59%, 50%);
+  --secondary-foreground: white;
+
+  --accent: hsl(352, 60%, 83%);
+  --accent-foreground: white;
+} */
+
+/* red dark */
+/* BE3144   */
+[data-theme="red"] {
+  --background: hsl(349, 59%, 94%);
+  --foreground: white;
+
+  --primary: hsl(355, 100%, 38%);
+  --primary: hsl(358, 94%, 62%);
+
+  --primary-foreground: white;
+
+  --button: hsl(351, 59%, 72%);
+  --button-foreground: white;
+
+  --secondary: hsl(352, 59%, 50%);
+  --secondary-foreground: white;
+
+  --accent: hsl(359, 84%, 78%);
+  --accent: hsl(359, 79%, 68%);
+
+  --accent-foreground: white;
+}
+
+/* purple  */
+/* 3D30A2 */
+[data-theme="purple"] {
+  --background: hsl(248, 57%, 95%);
+  --foreground: white;
+
+  --primary: hsl(246, 55%, 72%);
+  --primary-foreground: white;
+
+  --button: hsl(351, 59%, 72%);
+  --button-foreground: white;
+
+  --secondary: hsl(247, 55%, 50%);
+  --secondary-foreground: white;
+
+  --accent: hsl(248, 55%, 83%);
+  --accent-foreground: white;
+}
+
+/* dark */
+[data-theme="dark"] {
+  --background: hsl(0, 0%, 16%);
+  --foreground: white;
+
+  --primary: hsl(0, 0%, 75%);
+  /* hsl(0, 0%, 61%) */
+  --primary-foreground: white;
+
+  --button: hsl(214, 86%, 72%);
+  --button-foreground: white;
+
+  --secondary: hsl(0, 0%, 39%);
+  --secondary-foreground: white;
+
+  --accent: hsl(0, 0%, 72%);
+  --accent-foreground: white;
+}

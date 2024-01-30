@@ -1,0 +1,10 @@
+.card-wrapper:hover .card{
+ opacity : .7;
+ filter : blur(3px);
+}
+
+.card-wrapper .card:hover{
+  opacity : 1;
+  filter : blur(0px);
+/*transform : scale(1.1);*/
+}
